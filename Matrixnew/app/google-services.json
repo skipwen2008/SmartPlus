@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "709307364138",
+    "firebase_url": "https://matrix-skip.firebaseio.com",
+    "project_id": "matrix-skip",
+    "storage_bucket": "matrix-skip.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:709307364138:android:11e93586348cad2f38e453",
+        "android_client_info": {
+          "package_name": "com.laioffer.matrix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "709307364138-5s4kqhf9ehtreshp4ofs6ggi7s2dinp0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.laioffer.matrix",
+            "certificate_hash": "4ccb3164b4c9da375554b99ba577c1106b3acbac"
+          }
+        },
+        {
+          "client_id": "709307364138-85urjdbh1fi7u81u3nktbb1mdoati87l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYuMD98rrmNmHHRO65X4N950Q-3v7CT1g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "709307364138-85urjdbh1fi7u81u3nktbb1mdoati87l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
