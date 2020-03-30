@@ -26,21 +26,19 @@ public class ControlPanel extends AppCompatActivity {
         setContentView(R.layout.activity_control_panel);
 
 
-
-
-
-
-
+        // set up toolbars
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         ActionBar actionbar = getSupportActionBar();
         actionbar.setDisplayHomeAsUpEnabled(true);
         actionbar.setHomeAsUpIndicator(R.drawable.baseline_home_black_18dp);
 
+        // set up drawer layout
         drawerLayout = findViewById(R.id.drawer_layout);
 
         // location tracker
         final LocationTracker mLocationTracker = new LocationTracker(this);
+
         drawerLayout.addDrawerListener(
                 new DrawerLayout.DrawerListener() {
                     @Override
@@ -101,6 +99,8 @@ public class ControlPanel extends AppCompatActivity {
                         return true;
                     }
                 });
+        // add Fragment to the activity
+        getSupportFragmentManager().beginTransaction().replace(R.id.content_frame, MainFragment.newInstance()).commit();
 
     }
 
@@ -113,6 +113,8 @@ public class ControlPanel extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 
     private void logout() {
         finish();   // finish current activity
